@@ -12,7 +12,7 @@ namespace Emp_Manage_Sys
         {
             int Present = 1;
             Random random = new Random();
-            int emp_check = random.Next(0, 2);
+            int emp_check = random.Next(0,2);
             if (emp_check == Present)
             {
                 return true;
