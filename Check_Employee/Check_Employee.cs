@@ -9,17 +9,24 @@ namespace Emp_Manage_Sys
     public class Check_Employee
     {
         public static void Emp_check()
-        { 
+        {  
             Random random = new Random();
             int emp_check = random.Next(0, 2);
-            if(emp_check==0)
+            int Present = 1,emp_workHrs=0,emp_Rate_Per_Hour=20,emp_wage=0;
+
+            if(emp_check==Present)
             {
-                Console.WriteLine("Employee is absent");
+                emp_workHrs = 8;
+                Console.WriteLine("Employee is Present");
             }
             else
             {
-                Console.WriteLine("Employee is present");
+                emp_workHrs = 0;
+                Console.WriteLine("Employee is Absent");
             }
+
+            emp_wage = emp_workHrs * emp_Rate_Per_Hour;
+            Console.WriteLine("Employee wage = {0} ", emp_wage);
         }
 
     }
