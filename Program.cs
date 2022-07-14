@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Management System");
+            Check_Employee.Emp_check();
         }
     }
 }
